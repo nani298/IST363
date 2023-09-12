@@ -33,3 +33,27 @@ menuBtn.addEventListener("click", function() {
 closeBtn.addEventListener("click",function() {
     overlay.classList.remove("active");
 }); //end of closeBtn//
+
+//basic variable 
+const coffeeName = "Mocha";
+const coffeeHeadline = document.createElement("h2");
+coffeeHeadline.textContent = coffeeName;
+document.body.appendChild(coffeeHeadline);
+
+
+const coffee = {
+    name:"Mocha",
+    price:3.99,
+    description:"This is a delicious cup of coffee"
+};
+console.log(coffee.description);
+const coffeeObHeadline =document.createElement("h2");
+coffeeObHeadline.textContent = coffee.name;
+document.body.appendChild(coffeeObHeadline);
+
+const coffees = ["Mocha","Latte","Espresso"];
+//console.log(coffees[0]);
+
+coffees.forEach(function(coffee) {
+    console.log(coffee);
+});
