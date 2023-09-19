@@ -51,167 +51,189 @@ const coffeeObHeadline =document.createElement("h2");
 coffeeObHeadline.textContent = coffee.name;
 document.body.appendChild(coffeeObHeadline);
 
-const coffees = [
-    {
-        name:"Mocha",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
-    },
-     {
-        name:"Latte",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
-    },
-     {
-        name:"Esspresso",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
+// const basicCoffees = ["mocha","latte","espresso"];
+// basicCoffees.forEach(function(basicCoffees) {
+//     console.log({basicCoffees});
+// });
 
-    },
-    {
-        name:"Mocha",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
-    },
-     {
-        name:"Latte",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
-    },
-     {
-        name:"Esspresso",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
-    },
-    {
-        name:"Mocha",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
-    },
-     {
-        name:"Latte",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
-    },
-     {
-        name:"Esspresso",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
-    },
-    {
-        name:"Mocha",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
-    },
-     {
-        name:"Latte",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
-    },
-     {
-        name:"Esspresso",
-        price:3.99,
-        description: "This is a delicious cup of coffee",
-        image: {
-            fileName:"coffee.jpg",
-            width:630,
-            height:630,
-            altText:"A cup of coffee"
-        }
-    },
+// const coffees = [
+//     {
+//         name:"Mocha",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+//     },
+//      {
+//         name:"Latte",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+//     },
+//      {
+//         name:"Esspresso",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+
+//     },
+//     {
+//         name:"Mocha",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+//     },
+//      {
+//         name:"Latte",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+//     },
+//      {
+//         name:"Esspresso",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+//     },
+//     {
+//         name:"Mocha",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+//     },
+//      {
+//         name:"Latte",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+//     },
+//      {
+//         name:"Esspresso",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+//     },
+//     {
+//         name:"Mocha",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+//     },
+//      {
+//         name:"Latte",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+//     },
+//      {
+//         name:"Esspresso",
+//         price:3.99,
+//         description: "This is a delicious cup of coffee",
+//         image: {
+//             fileName:"coffee.jpg",
+//             width:630,
+//             height:630,
+//             altText:"A cup of coffee"
+//         }
+//     },
 
 
-];
+// ];
 //console.log(coffees[0]);
 
+function buildTextElement(element,className, content){
+    const newElement = document.createElement(element);
+    newElement.classList.add(className);
+    newElement.textContent = content;
+    return newElement;
+}
+
 coffees.forEach(function(coffee) {
-    const {name,price,description,image}=coffee;
+    const {title,price,description,image}=coffee;
 
     const coffeeArticle = document.createElement("article");
+    coffeeArticle.classList.add("coffee-item");
+
+    // const coffeeArticle = document.createElement("article");
 
     const coffeeImage = document.createElement("img");
-    coffeeImage.src =`images/${image.fileName}`;
+    // coffeeImage.src =`images/${image.fileName}`;
     coffeeImage.width = image.width;
     coffeeImage.height =image.height;
     coffeeImage.alt = image.altText;
 
-    const coffeeName = document.createElement("h2");
-    coffeeName.textContent = name;
+    // const coffeeTitle =document.createElement("h2");
+    // coffeeTitle.classList.add("coffee-title");
+    // coffeeTitle.textContent = title;
 
-    const coffeePrice = document.createElement("h3");
-    coffeePrice.textContent = price;
+    const coffeeTitle = buildTextElement("h2","coffee-title",title);
+
+
+    // const coffeePrice = document.createElement("h3");
+    // coffeePrice.classList.add("coffee-price");
+    // coffeePrice.textContent =`${price}`;
+    coffeePrice = buildTextElement("h3","coffee-price",`${price}`);
 
     const coffeeDescription = document.createElement("p");
+    coffeeDescription.classList.add("coffee-description");
     coffeeDescription.textContent = description;
 
-    coffeeArticle.appendChild(coffeeImage);
-    coffeeArticle.appendChild(coffeeName);
+  
+    coffeeArticle.appendChild(coffeeTitle);
     coffeeArticle.appendChild(coffeePrice);
     coffeeArticle.appendChild(coffeeDescription);
 
