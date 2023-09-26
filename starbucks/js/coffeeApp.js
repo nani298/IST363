@@ -4,9 +4,10 @@
 const ascendingBtn = document.getElementById("ascendingBtn");
 const descendingBtn = document.getElementById("descendingBtn");
 const coffeeList =document.getElementById("coffeeList");
+const priceRanges = document.getElementById("priceRanges");
 
 const purgeList = () => {
-    cofffeeList= innerHTML ="";
+    coffeeList.innerHTML ="";
 }
 const sortListByDirection = (direction,arr) => {
     //console.log ({direction});
@@ -84,6 +85,39 @@ decendingBtn.addEventListener("click",function() {
     displayList(sortedList);
     //console.log(sortedList);
 });
+
+
+
+
+priceRanges.addEventListener("change", (event) => {
+    console.log("price range has been changed");
+    console.log(event.target.value);
+    const selectedRange = event.target.value;
+
+    if(selectedRange === "all"){
+        purgeList();
+        displayList(coffees);
+    } else {
+        const [minValue,maxValue] = selectedRange.split("-");
+        console.log({minValue,maxValue});
+
+        const filteredCoffees =  filterCoffees(minValue,maxValue);
+
+        purgeList();
+        displayList(filteredCoffees);
+    }
+    // console.log ({splitRange});
+});
+
+const filterCoffees = (minValue,maxValue) => {
+    const filteredArr = coffees.filter((coffee) => {
+        const {price} = coffee;
+        return price >= minValue && price <= maxValue;
+    });
+    console.log ({filteredArr});
+    return filteredArr
+}
+
 
 displayList(coffees);
 // purge the coffee list
