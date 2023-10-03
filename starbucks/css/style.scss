@@ -1,3 +1,7 @@
+$color_primary:#f94f1a;
+$font_primary: Arial,Verdana, sans-serif;
+
+
 h1,h2,h3,h4,h5,h6,p,body,ul,li{
     margin: 0;
     padding: 0;
@@ -15,7 +19,8 @@ ul,li{
 }
 
 body{
-    background-color: yellow;
+    background-color: $color_primary;
+    font-family: $font_primary;
 }
 .overlay{
     background-color:var(--starbucks-green);
@@ -39,9 +44,26 @@ body{
     transition-duration:1s;
 }
 
-h1{
-    font-size: 36px;
-    color: var(--starbucks-green);  
+header{
+    background-color: teal;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    h1{
+        font-size: 3rem;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .btn{
+        background-color: pink;
+        padding: 1rem;
+        border: 0;
+        &:hover{
+            background-color: gray;
+        }
+        &.active{
+            background-color: bisque;
+        }
+    }
 }
 
 .logo{
