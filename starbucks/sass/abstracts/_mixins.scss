@@ -1,0 +1,6 @@
+@mixin buildFontProperties ($size,$color,$font) {
+    font-size:$font;
+    color: $color;
+    font-family:$size;
+
+}
