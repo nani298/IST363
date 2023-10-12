@@ -326,6 +326,64 @@ body {
   font-family: Arial, Verdana, sans-serif;
 }
 
+.btn-ui {
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+}
+
+.btn-ui svg {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--medium-gray);
+}
+
+#closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+#closeBtn svg {
+  fill: white;
+}
+
+.coffee-item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.coffee-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+}
+
+.coffee-price {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  font-family: Arial;
+  color: gray;
+}
+
+.coffee-description {
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: Arial;
+  color: black;
+}
+
+.logo {
+  width: 5rem;
+  height: auto;
+}
+
 .overlay {
   background-color: var(--starbucks-green);
   width: 100vw;
@@ -341,13 +399,7 @@ body {
   justify-content: center;
   padding: 2rem;
 }
-
-.overlay.active {
-  left: 0;
-  transition-duration: 1s;
-}
-
-.logo {
+.overlay .logo {
   width: 100px;
   height: 100px;
   margin-bottom: 2rem;
@@ -357,6 +409,11 @@ body {
   transition-property: all;
   transition-delay: 0.25s;
   transition-duration: 0.5s;
+}
+
+.overlay.active {
+  left: 0;
+  transition-duration: 1s;
 }
 
 .mobile-nav {
@@ -411,9 +468,9 @@ header {
   padding-bottom: 1rem;
 }
 header h1 {
-  font-size: Arial;
+  font-size: 6rem;
   color: red;
-  font-family: 6rem;
+  font-family: Arial;
 }
 header .btn {
   background-color: pink;
@@ -425,59 +482,6 @@ header .btn.active {
 }
 header .btn:hover {
   background-color: gray;
-}
-
-.btn-ui {
-  background-color: transparent;
-  border: 0;
-  padding: 1rem;
-}
-
-.btn-ui svg {
-  width: 3rem;
-  height: 3rem;
-  fill: var(--medium-gray);
-}
-
-#closeBtn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background-color: transparent;
-  border: 1px solid white;
-}
-
-#closeBtn svg {
-  fill: white;
-}
-
-.coffee-item {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid gray;
-}
-
-.coffee-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  color: gray;
-}
-
-.coffee-price {
-  font-size: 1.25rem;
-  font-weight: normal;
-  margin-bottom: 0.5rem;
-  font-family: Arial;
-  color: gray;
-}
-
-.coffee-description {
-  font-size: 1rem;
-  font-weight: normal;
-  font-family: Arial;
-  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
