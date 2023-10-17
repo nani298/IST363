@@ -350,6 +350,27 @@ body {
   fill: white;
 }
 
+.container {
+  background-color: yellow;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .container {
+    width: 96%;
+  }
+}
+@media (min-width: 980px) {
+  .container {
+    width: 980px;
+  }
+}
+@media (min-width: 1140px) {
+  .container {
+    width: 1140px;
+  }
+}
+
 .coffee-item {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -382,6 +403,28 @@ body {
 .logo {
   width: 5rem;
   height: auto;
+}
+
+.nav {
+  background-color: aqua;
+}
+.nav.nav--desktop {
+  display: none;
+}
+@media (min-width: 980px) {
+  .nav.nav--desktop {
+    display: block;
+  }
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__item a {
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
 }
 
 .overlay {
@@ -462,26 +505,22 @@ body {
   opacity: 1;
 }
 
+.row {
+  display: flex;
+  gap: 1rem;
+}
+.row.justify-content-space-between {
+  justify-content: space-between;
+}
+.row.align-items-center {
+  align-items: center;
+}
+
 header {
-  background-color: teal;
+  background-color: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-header h1 {
-  font-size: 6rem;
-  color: red;
-  font-family: Arial;
-}
-header .btn {
-  background-color: pink;
-  padding: 1rem;
-  border: 0;
-}
-header .btn.active {
-  background-color: bisque;
-}
-header .btn:hover {
-  background-color: gray;
+  border-bottom: 1px solid gray;
 }
 
 /*# sourceMappingURL=style.css.map */
