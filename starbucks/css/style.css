@@ -408,27 +408,51 @@ body {
 .nav {
   background-color: aqua;
 }
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  font-family: Arial;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav__link--black {
+  color: black;
+}
+.nav__link--white {
+  color: white;
+}
 .nav.nav--desktop {
   display: none;
+}
+.nav.nav--desktop .nav__link {
+  color: black;
+  text-transform: uppercase;
 }
 @media (min-width: 980px) {
   .nav.nav--desktop {
     display: block;
   }
 }
-.nav__list {
-  display: flex;
-  align-items: center;
+.nav.nav--mobile {
+  background-color: orange;
 }
-.nav__item a {
-  font-family: arial;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
+.nav.nav--social {
+  background-color: purple;
+}
+.nav.nav--social .nav__link {
+  color: white;
+}
+.nav.nav--footer {
+  background-color: red;
+}
+.nav.nav--footer .nav__link {
+  color: white;
 }
 
 .overlay {
-  background-color: var(--starbucks-green);
+  background-color: #006341;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -459,48 +483,25 @@ body {
   transition-duration: 1s;
 }
 
-.mobile-nav {
-  background-color: transparent;
-  padding: 1rem;
-}
-
-.mobile-nav a {
-  font-family: arial;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  display: block;
-  padding: 1rem 0;
-  text-decoration: none;
-}
-
-.mobile-nav ul li {
-  position: relative;
-  left: -1rem;
-  opacity: 0;
-  transition-property: all;
-  transition-duration: 0.5s;
-}
-
 /* transition delay on overlay */
-.overlay.active .mobile-nav ul li {
+.overlay.active .nav--mobile ul li {
   opacity: 1;
   left: 0;
 }
 
-.overlay.active .mobile-nav ul li:nth-child(1) {
+.overlay.active .nav--mobile ul li:nth-child(1) {
   transition-delay: 1s;
 }
 
-.overlay.active .mobile-nav ul li:nth-child(2) {
+.overlay.active .nav--mobile ul li:nth-child(2) {
   transition-delay: 1.4s;
 }
 
-.overlay.active .mobile-nav ul li:nth-child(3) {
+.overlay.active .nav--mobile ul li:nth-child(3) {
   transition-delay: 1.8s;
 }
 
-.overlay.active .logo {
+.overlay.active .nav--mobile .logo {
   left: 0;
   opacity: 1;
 }

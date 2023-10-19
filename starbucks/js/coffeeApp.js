@@ -1,6 +1,8 @@
 // create variables for the button s
 
-
+const menuBtn = document.getElementById("menuBtn");
+const closeBtn = document.getElementById("closeBtn");
+const overlay = document.getElementById("overlay");
 const ascendingBtn = document.getElementById("ascendingBtn");
 const descendingBtn = document.getElementById("descendingBtn");
 const coffeeList =document.getElementById("coffeeList");
@@ -76,6 +78,16 @@ const displayList = (arr) => {
 }// display list function end 
 
 // create event listeners for the buttons 
+menuBtn.addEventListener("click", function() {
+    //console.log("menu button has been clicked");
+    overlay.classList.add("active");
+});// end of menuBtn click event 
+
+//start of closeBtn//
+closeBtn.addEventListener("click",function() {
+    overlay.classList.remove("active");
+}); //end of closeBtn//
+
 ascendingBtn.addEventListener("click",function() {
     console.log("ascending button has been clicked");
     //purgeList();

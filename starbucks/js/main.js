@@ -17,24 +17,13 @@ console.log(introduction);
 
 //2.methods
 // start of menuBtn click event 
-const menuBtn = document.getElementById("menuBtn");
-const colseBtn = document.getElementById("colseBtn");
-const overlay = document.getElementById("overlay");
+
 const coffeeList =document.getElementById("coffeeList");
 const ascendingBtn = document.getElementById("ascendingBtn");
 const descendingBtn = document.getElementById("descendingBtn");
 //console.log(menuBtn);
 
 // "event name", call back function//
-menuBtn.addEventListener("click", function() {
-    //console.log("menu button has been clicked");
-    overlay.classList.add("active");
-});// end of menuBtn click event 
-
-//start of closeBtn//
-closeBtn.addEventListener("click",function() {
-    overlay.classList.remove("active");
-}); //end of closeBtn//
 
 function purgeList() {
     cofffeeList= innerHTML ="";
